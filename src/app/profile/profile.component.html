@@ -1,0 +1,36 @@
+<table *ngIf= "userdetails" class="table-fill" >
+    <thead>
+        <tr>
+            <th colspan="2" class="text-center"> user profile </th>
+
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                first name 
+            </td>
+            <td>
+                {{userdetails.name}}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                email 
+            </td>
+            <td>
+                {{userdetails.email}}
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="text-center">
+                <input type="button" (click)= "onlogout()" value="logout"/>
+
+            </td>
+        </tr>
+    </tbody>
+
+</table>
